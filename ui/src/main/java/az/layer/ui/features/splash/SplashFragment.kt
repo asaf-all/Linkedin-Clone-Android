@@ -24,7 +24,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
     override fun initUi() {
 
         lifecycleScope.launch {
-            delay(1500)
+            delay(500)
             findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
         }
 
