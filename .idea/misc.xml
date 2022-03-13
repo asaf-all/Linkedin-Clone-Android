@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/app/src/main/res/layout/activity_main.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/app/src/main/res/layout/fragment_splash.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/app/src/main/res/layout/item_post.xml" value="0.536" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/app/src/main/res/menu/menu_bottom_nav.xml" value="0.381025641025641" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/drawable/bottom_nav_color.xml" value="0.2535" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/drawable/ic_add_post.xml" value="0.2535" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/drawable/ic_message_filled.xml" value="0.2535" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/drawable/ic_more_3dot.xml" value="0.2335" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/layout-v23/fragment_home.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/layout/activity_main.xml" value="0.24682971014492755" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/LinkedinClone/ui/src/main/res/layout/fragment_home.xml" value="0.4" />
