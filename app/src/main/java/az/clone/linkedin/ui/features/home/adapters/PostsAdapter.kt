@@ -7,8 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import az.clone.linkedin.databinding.ItemPostBinding
 import az.clone.linkedin.ui.extensions.loadImage
 import az.clone.linkedin.ui.features.home.models.Post
-import az.clone.linkedin.ui.tools.diffutil.PostsDiffUtil
-import com.bumptech.glide.Glide
+import az.clone.linkedin.ui.features.home.adapters.diffutil.PostsDiffUtil
 
 class PostsAdapter(
     private val onItemClick: (Post) -> Unit

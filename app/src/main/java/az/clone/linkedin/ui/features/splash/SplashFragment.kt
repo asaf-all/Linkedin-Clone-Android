@@ -10,7 +10,9 @@ import az.clone.linkedin.ui.extensions.changeStatusBarColor
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+
 class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +20,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
         activity?.applicationContext?.let {
             activity?.changeStatusBarColor(it, R.color.linkedin_blue)
         }
+
     }
 
     override fun initUi() {
@@ -27,6 +30,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
             findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
         }
 
-
     }
+
+
 }

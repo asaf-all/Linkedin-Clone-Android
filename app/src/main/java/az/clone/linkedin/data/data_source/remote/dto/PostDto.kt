@@ -2,7 +2,7 @@ package az.clone.linkedin.data.data_source.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class PostResponse(
+data class PostDto(
     @SerializedName("posts")
     val posts: List<Post>?
 ) {

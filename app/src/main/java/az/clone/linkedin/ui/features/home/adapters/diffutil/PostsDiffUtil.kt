@@ -1,4 +1,4 @@
-package az.clone.linkedin.ui.tools.diffutil
+package az.clone.linkedin.ui.features.home.adapters.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
 import az.clone.linkedin.ui.features.home.models.Post

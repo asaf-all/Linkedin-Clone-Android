@@ -8,9 +8,7 @@ import az.clone.linkedin.databinding.FragmentHomeBinding
 import az.clone.linkedin.ui.base.BaseFragment
 import az.clone.linkedin.ui.extensions.changeStatusBarColor
 import az.clone.linkedin.ui.features.home.adapters.PostsAdapter
-import az.clone.linkedin.ui.features.home.models.Post
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
@@ -22,6 +20,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             showShortToast(post.id)
         }
     }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +39,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     private fun initObservers() {
-        homeViewModel.posts.observe(viewLifecycleOwner) { posts ->
-            postsAdapter.setItems(posts)
+        homeViewModel.postsIsLoading.observe(viewLifecycleOwner) { isLoading ->
+            if (isLoading) binding.refreshLayout.isRefreshing = true
+        }
+        homeViewModel.posts.observe(viewLifecycleOwner) { items ->
+            binding.refreshLayout.isRefreshing = false
+            postsAdapter.setItems(items)
             binding.postList.adapter = postsAdapter
         }
     }
@@ -57,5 +61,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                     //binding.toolbar.visibility = View.VISIBLE
                 }
             })
+        binding.refreshLayout.setOnRefreshListener {
+            homeViewModel.getPosts()
+        }
     }
 }
